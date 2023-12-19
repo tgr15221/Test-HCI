@@ -1,0 +1,66 @@
+.leaderboard {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-image: url('../source/banner1hp.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 70vh;
+}
+
+.leaderboard-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.rank,
+.username,
+.kills,
+.accuracy,
+.score {
+    flex: 1;
+    text-align: center;
+}
+
+.rank {
+    font-weight: bold;
+}
+
+.username {
+    margin-left: 10px;
+}
+
+.kills,
+.accuracy,
+.score {
+    margin-left: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.seeAll {
+    background-color: white; 
+    font-weight: bold;
+    color: black; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.seeAll:hover {
+    background-color: grey; 
+}

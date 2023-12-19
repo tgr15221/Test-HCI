@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/register.css" rel="stylesheet"/>
+    <script src="js/signup.js" defer></script>
+    <title>Sign-Up Page</title>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <img src="source/aimclap.jpg" alt="AimClab">
+          <h1>XYZ Hospital : Doctor Lists</h1>
+        </div>
+        <h2>Its Easy to be Healthy!</h2>
+    </header>
+    
+    <nav>
+    <button onclick="window.location.href='homepage.html'">Home</button>
+    <button onclick="window.location.href='leaderboard.html'">LeaderBoard</button>
+    <button onclick="window.location.href='store.html'">Store</button>
+    <button onclick="window.location.href='aboutus.html'">About Us</button>
+    <button onclick="window.location.href='signup-page.html'">Sign-Up</button>
+    </nav>
+    <div class="bg">
+        <form id="form" method="post">
+            <h1>Login</h1>
+            <div class="form-component">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username"/>
+            </div>  
+            
+            <div class="form-component">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password"/>
+            </div>
+    
+            <!-- <input type="submit" name="submit" id="submit"/> -->
+            <div class="signupBtn">
+                <button class="btnsignup" name="signup" value="Signup">Signup</button>
+                <div class="help-block">
+                    Already have an account? <a href="signup-page.html">Register here</a>
+                </div>
+            </div>
+    
+        </form>
+    </div>
+    
+
+    <!-- <footer>
+        &copy; 2023 train your aim with AimClap. All Rights Reserved
+    </footer> -->
+</body>
+</html>

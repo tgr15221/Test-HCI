@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/homepage.css" rel="stylesheet"/>
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <img src="source/aimclap.jpg" alt="AimClab">
+          <h1>XYZ Hospital : Doctor Lists</h1>
+        </div>
+        <h2>Its Easy to be Healthy!</h2>
+    </header>
+    <nav>
+        <button onclick="window.location.href='#'">Home</button>
+        <button onclick="window.location.href='leaderboard.html'">LeaderBoard</button>
+        <button onclick="window.location.href='store.html'">Doctor Lists</button>
+        <button onclick="window.location.href='aboutus.html'">About Us</button>
+        <button onclick="logout()">Logout</button>
+    </nav>
+    
+    <div class="banner1">
+        <div class="b1header">
+            <h1>XYZ Hospital : Doctor Lists</h1>
+            <h2>We Provide XYZ Hospilat : Doctor Lists Website and Apps with Several Benefits like : </h2>
+            <h3>- Makes it Easier for You to See and Book Our Doctors from Home</h3>
+            <h3>- More than 100++ Certified and Competent Doctors</h3>
+            <h3>- Trusted by many Countries arround the world : </h3>
+            <div class="image-controller">
+                <a href="https://id.wikipedia.org/wiki/Indonesia"><img src="source/indo.png" alt="indo"></a>
+                <a href="https://id.wikipedia.org/wiki/Filipina"><img src="source/filipina.png" alt="filipina"></a>
+                <a href="https://id.wikipedia.org/wiki/Malaysia"><img src="source/malay.png" alt="malay"></a>
+                <a href="https://id.wikipedia.org/wiki/Thailand"><img src="source/thai.png" alt="thai"></a>
+                <a href="https://id.wikipedia.org/wiki/Jepang"><img src="source/japan.png" alt="nippon"></a>
+            </div>
+        </div>
+        <div class="b1right">
+            <img src="source/displaydr.png" alt="Stewie2k">
+        </div>
+    </div>
+    <div class="banner2">
+        <div class="b2right">
+            <h1>Follow Us On : </h1>
+            <div class="sosmed">
+                <a href="https://www.instagram.com"><img src="source/instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com"><img src="source/twitter.png" alt="twitter"></a>
+                <a href="https://www.youtube.com"><img src="source/youtube.jpg" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="b2left">
+            <h1>Download Now!</h1>
+            <img src="source/arrow.png" alt="arrow">
+            <button class="downloadBTN">Download</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Easy to Find Doctor With XYZDoctorList. All Rights Reserved
+    </footer>
+    <script>
+        function logout() {
+            var confirmLogout = confirm("Are you sure you want to logout?");
+            if (confirmLogout) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

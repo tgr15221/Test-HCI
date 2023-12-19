@@ -1,0 +1,30 @@
+/* .left {
+    background-color: yellow;
+    width: 50%;
+    float: left;
+    height: 70vh;
+}
+
+
+.right {
+    background-color: aqua;
+    width: 50%;
+    float: right;
+    height: 70vh;
+} */
+
+.me {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }

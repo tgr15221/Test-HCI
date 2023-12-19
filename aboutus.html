@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/aboutus.css" rel="stylesheet"/>
+    <title>About Us Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <img src="source/aimclap.jpg" alt="AimClab">
+          <h1>XYZ Hospital : Doctor Lists</h1>
+        </div>
+        <h2>Its Easy to be Healthy!</h2>
+    </header>
+    
+    <nav>
+    <button onclick="window.location.href='homepage.html'">Home</button>
+    <button onclick="window.location.href='leaderboard.html'">LeaderBoard</button>
+    <button onclick="window.location.href='store.html'">Doctor Lists</button>
+    <button onclick="window.location.href='#'">About Us</button>
+    <button onclick="logout()">Logout</button>
+    </nav>
+
+    <!-- <div class="left">Left</div>
+    <div class="right">Right</div> -->
+
+    <div class="me">
+        <h2>About XYZDoctorList</h2>
+        <p>XYZ Hospital: Doctor List is an innovative application designed to provide comprehensive information about the professional doctors practicing at XYZ Hospital. Our mission is to facilitate seamless access to the profiles of highly skilled doctors, enabling patients to make informed decisions about their healthcare. With XYZ Hospital: Doctor List, users can explore detailed profiles of doctors, including their specialties, qualifications, experience, and areas of expertise. The application also offers convenient features such as appointment scheduling, patient reviews, and ratings to enhance the patient's experience. We are dedicated to connecting patients with the right doctors, ensuring personalized and quality healthcare services.</p>
+        <h2>XYZDoctorList App Description</h2>
+        <p>XYZ Hospital: Doctor List is a user-friendly mobile application that serves as a one-stop solution for all your medical needs. With our app, you can effortlessly browse through a vast database of renowned doctors practicing at XYZ Hospital. Discover doctors from various specialties and easily access their detailed profiles, providing you with valuable insights about their medical expertise. Convenient features like appointment booking and real-time availability updates ensure a seamless and hassle-free experience. Our app also allows patients to provide feedback and rate their experiences, fostering transparency and trust in the healthcare community. XYZ Hospital: Doctor List empowers patients to make informed decisions and receive the best possible medical care.</p>
+
+    <footer>
+        &copy; 2023 Easy to Find Doctor With XYZDoctorList. All Rights Reserved
+    </footer>
+    <script>
+        function logout() {
+            var confirmLogout = confirm("Are you sure you want to logout?");
+            if (confirmLogout) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+.bodeh {
+    height: 100vh;
+    width: auto;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    background-image: url('../source/ankara.jpg');
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.form-component {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    padding-right: 1.5em;
+    background: url("../source/calendar.png") no-repeat center right;
+    background-size: 20px;
+}
+
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* #submit {
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: grey; 
+} */
+
+.btnsignup {
+    background-color: black; /* Tombol transparan */
+    color: white; /* Warna teks biru muda */
+    padding: 10px 20px;
+    border: none; /* Garis tepi biru muda */
+    border-radius: 20px; /* Tambahkan sedikit radius sudut */
+    cursor: pointer;
+}
+
+.btnsignup:hover {
+    background-color: grey; /* Warna latar belakang saat dihover */
+}

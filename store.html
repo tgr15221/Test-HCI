@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/store.css" rel="stylesheet"/>
+    <title>Store Page</title>
+
+    <style>
+        .BegDoctorList {
+            text-align: center;
+            transform: skewY(-5deg);
+            transform-origin: top;
+        }
+        .time {
+            color: #f2f2f2;
+            font-size: 16px;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <img src="source/aimclap.jpg" alt="AimClab">
+          <h1>XYZ Hospital : Doctor Lists</h1>
+        </div>
+        <h2>Its Easy to be Healthy!</h2>
+    </header>
+    
+    <nav>
+    <button onclick="window.location.href='homepage.html'">Home</button>
+    <button onclick="window.location.href='leaderboard.html'">LeaderBoard</button>
+    <button onclick="window.location.href='#'">Doctor Lists</button>
+    <button onclick="window.location.href='aboutus.html'">About Us</button>
+    <button onclick="logout()">Logout</button>
+    <div class="time ml-auto" id="timeBox"></div>
+    </nav>
+
+    <div class="BegDoctorList">
+        <h1>Meet Our Professional Doctors!!</h1>
+    </div>
+
+    
+
+    <div class="container">
+        <div class="product">
+            <img src="storesrc/dr1.jpg" alt="Mouse">
+            <h3>dr. Rasmus Hojlund</h3>
+            <p>Lung Specialist</p>
+            <p>08.00 - 11.00</p>
+            <div class="button">
+                <button class="seeAll"> --- Book --- </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="storesrc/dr2.jpg" alt="OfficialMerch">
+            <h3>dr. Trent A.A</h3>
+            <p>Renal Specialist</p>
+            <p>12.00 - 14.00</p>
+            <div class="button">
+                <button class="seeAll"> --- Book --- </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="storesrc/dr3.jpg" alt="Logitech G733">
+            <h3>dr. Anne Johnstone</h3>
+            <p>Liver Specialist</p>
+            <p>13.00.00 - 15.00</p>
+            <div class="button">
+                <button class="seeAll"> --- Book --- </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="storesrc/dr4.jpg" alt="Logitech G733">
+            <h3>dr. Vabio Viera</h3>
+            <p>Pediatric Specialist</p>
+            <p>15.00 - 17.00</p>
+            <div class="button">
+                <button class="seeAll"> --- Book --- </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="storesrc/dr5.jpg" alt="Logitech G733">
+            <h3>dr. Virat Kholi</h3>
+            <p>Digestive Specialist</p>
+            <p>19.00 - 21.00</p>
+            <div class="button">
+                <button class="seeAll"> --- Book --- </button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="storesrc/dr6.jpg" alt="Logitech G733">
+            <h3>dr. Darren Watkins</h3>
+            <p>ENT Specialist</p>
+            <p>20.00 - 22.00</p>
+            <div class="button">
+                <button class="seeAll"> --- Book --- </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Easy to Find Doctor With XYZDoctorList. All Rights Reserved
+    </footer>
+
+    <script>
+        function updateTime() {
+            var timeBox = document.getElementById("timeBox");
+            var now = new Date();
+
+            // Mendapatkan informasi hari, bulan, tanggal, dan tahun
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var dateString = now.toLocaleDateString('en-US', options);
+
+            // Mendapatkan informasi jam dan menit
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+
+            // Memperbarui konten elemen
+            timeBox.textContent = dateString + " - " + hours + ":" + formatTime(minutes);
+
+            setTimeout(updateTime, 1000); // Update waktu setiap 1 detik
+        }
+
+        function formatTime(time) {
+            return time < 10 ? "0" + time : time; // Menambahkan leading zero jika waktu < 10
+        }
+
+        updateTime(); // Memanggil fungsi updateTime untuk pertama kali
+
+        function logout() {
+            var confirmLogout = confirm("Are you sure you want to logout?");
+            if (confirmLogout) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>
